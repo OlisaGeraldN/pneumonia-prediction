@@ -3,6 +3,8 @@ from flask import Flask, request, render_template, redirect, url_for
 from werkzeug.utils import secure_filename
 import numpy as np
 import tensorflow as tf
+from PIL import Image
+
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "static/uploads"
